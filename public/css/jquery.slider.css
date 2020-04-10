@@ -1,0 +1,120 @@
+.slider{
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+.slider-box{
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.slider-box .slider-item{
+	border: none;
+	float: left;
+	z-index: 1;
+}
+.slider-nav, 
+.slider-control{
+	bottom: 10px;
+	overflow: hidden;
+	padding: 7px 10px;
+	position: absolute;
+	z-index: 10;
+}
+.slider-nav{
+	right: 43px;
+}
+.slider-nav a:link, .slider-nav a:visited, .slider-nav a:active{
+	float: left;
+	background-color: #666;
+	border-radius: 10px;	
+	display: block;
+	margin: 0 3px;
+	outline: none;
+	width: 20px;
+	height: 20px;
+	line-height:20px;
+	text-indent:6px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#fff;
+}
+.slider-nav a:hover{
+	text-decoration:none;
+	background-color: #1ccd00;
+}
+.slider-nav a.slider-nav-focus{
+	background-color: #1ccd00;	
+}
+.slider-control{
+	left: 10px;
+}
+.slider-control a:link, .slider-control a:visited, .slider-control a:active{
+
+}
+.slider-control a:hover{
+
+}
+.slider-play, .slider-stop{
+	display: block;
+	float: left;
+	margin: 0 5px;
+	outline: none;
+}
+.slider-play{
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #666;
+	box-shadow: inset 1px 1px #333;
+}
+.slider-stop{
+	background-color: #666;
+	box-shadow: inset 1px 1px #333;
+	height: 8px;
+	width: 7px;
+}
+.slider-arrow{
+	background-color: #fff;
+	display: none;
+	outline: none;
+	position: absolute;
+	z-index: 10;
+}
+.slider-prev, .slider-next{
+	height: 40px;
+	top: 45%;
+	width: 40px;
+	height:50px;
+}
+.slider-prev{
+	background:  url(../images/prev.png) center center no-repeat;
+	/*border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;*/
+	left: 0;
+}
+.slider-next{
+	background:  url(../images/next.png) center center no-repeat;
+	/*border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;*/
+	right: 0;
+}
+.slider-up, .slider-down{
+	height: 35px;
+	left: 45%;
+	width: 40px;
+}
+.slider-up{
+	background: #fff url(../images/up.png) center center no-repeat;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	top: 0;
+}
+.slider-down{
+	background: #fff url(../images/down.png) center center no-repeat;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	bottom: 0;
+}

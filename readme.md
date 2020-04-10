@@ -69,3 +69,32 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 注意事項
+git clone後需執行以下指令
+## 修改 .env 
+#docker 啟動下要這樣設定
+DB_HOST=mysql
+#DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=web
+DB_USERNAME=default
+DB_PASSWORD=secret
+填寫自己的mysql帳號密碼
+##清除快取
+php artisan config:clear
+##建立快取
+php artisan config:cache
+
+npm install
+
+composer install
+
+##更改資料權限
+linux要多下chmod -R 777 storage
+
+##資料庫轉移
+php artisan migrate
+
+##資料載入
+php artisan db:seed --class ProductTableSeeder
